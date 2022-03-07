@@ -24,6 +24,10 @@ Route::get('/program-level-list', [\App\Http\Controllers\ProgramLevelController:
 Route::resource('department', \App\Http\Controllers\DepartmentController::class);
 Route::get('/department-list', [\App\Http\Controllers\ProgramLevelController::class, 'showData'])->name('department.list');
 
+// Designation Routes
+Route::resource('designation', \App\Http\Controllers\DesignationController::class);
+Route::get('/designation-list', [\App\Http\Controllers\DesignationController::class, 'showData'])->name('designation.list');
+
 // Dashboard Routes
 Route::get('/dashboard', function () {
     return view('admin.dashboard');

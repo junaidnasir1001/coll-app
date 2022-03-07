@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Designation;
 use Illuminate\Http\Request;
+use DataTables;
 
 class DesignationController extends Controller
 {
@@ -24,7 +25,7 @@ class DesignationController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.designation.create');
     }
 
     /**
@@ -33,9 +34,19 @@ class DesignationController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, Designation $designation)
     {
-        //
+        try {
+            $designation->designation_name = $request->designation;
+            $designation->save();
+            $response = array('status' => 'success', 'message' => 'Data Inserted Successful');
+            return response()->json($response, 200);
+
+        } catch (\Exception $exception) {
+
+            $response = array('status' => 'error', 'message' => $exception->getMessage());
+            return response()->json($response,500);
+        }
     }
 
     /**
@@ -44,9 +55,10 @@ class DesignationController extends Controller
      * @param  \App\Models\Designation  $designation
      * @return \Illuminate\Http\Response
      */
-    public function show(Designation $designation)
+    public function show($id)
     {
-        //
+        $designation = Designation::find($id);
+        return view('admin.designation.show', compact('designation'));
     }
 
     /**
@@ -81,5 +93,26 @@ class DesignationController extends Controller
     public function destroy(Designation $designation)
     {
         //
+    }
+
+    public function showData(Request $request)
+    {
+        if ($request->ajax()) {
+            $data = Designation::latest()->get();
+            return Datatables::of($data)
+                ->addIndexColumn()
+                ->addColumn('action', function($row){
+                    $actionBtn = '<a href="'. $row->id .'/edit" class="btn btn-xs btn-primary"><i class="glyphicon glyphicon-edit"></i> Edit</a>
+                                 <form action="{{ route(\'destroy\',' . $row->id . ') }}" method="POST" class="delete_form">
+                    '.csrf_field().'
+                    '.method_field("DELETE").'
+                    <button type="submit" class="btn btn-xs btn-danger"
+                    >Delete</a>
+                    </form>';
+                    return $actionBtn;
+                })
+                ->rawColumns(['action'])
+                ->make(true);
+        }
     }
 }

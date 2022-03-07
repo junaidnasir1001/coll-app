@@ -90,34 +90,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link ">
-                        <i class="nav-icon fas fa-tachometer-alt"></i>
-                        <p>
-                            Department
-                            <i class="right fas fa-angle-left"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="Add_Department.html" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Add Department</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="View_Department.html" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>View Department</p>
-                            </a>
-                        </li>
-
-                    </ul>
-                </li>
-
-
-
-                <li class="nav-item">
-                    <a href="#" class="nav-link ">
+                    <a href="" class="nav-link ">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
                             Designation
@@ -126,13 +99,13 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="Add_Designation.html" class="nav-link">
+                            <a href="{{url('designation/create')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Add Designation</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="View_Designation.html" class="nav-link">
+                            <a href="{{url('designation/show')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>View Designation</p>
                             </a>
