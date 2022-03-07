@@ -12,11 +12,19 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+ // Class Room Routes
 Route::resource('class-room', \App\Http\Controllers\ClassRoomController::class);
+Route::get('/class-room-list', [\App\Http\Controllers\ClassRoomController::class, 'showData'])->name('class-room.list');
+
+// Program Level Routes
 Route::resource('program-level', \App\Http\Controllers\ProgramLevelController::class);
 Route::get('/program-level-list', [\App\Http\Controllers\ProgramLevelController::class, 'showData'])->name('program-level.list');
-//Route::get('class-room/{class_room}/edit',[\App\Http\Controllers\ClassRoomController::class, 'editData'])->name('class-room.edit');
-Route::get('/class-room-list', [\App\Http\Controllers\ClassRoomController::class, 'showData'])->name('class-room.list');
+
+// Department Routes
+Route::resource('department', \App\Http\Controllers\DepartmentController::class);
+Route::get('/department-list', [\App\Http\Controllers\ProgramLevelController::class, 'showData'])->name('department.list');
+
+// Dashboard Routes
 Route::get('/dashboard', function () {
     return view('admin.dashboard');
 });
