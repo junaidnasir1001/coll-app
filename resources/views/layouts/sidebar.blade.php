@@ -39,8 +39,8 @@
                     </ul>
                 </li>
 
-                <li class="nav-item menu-open">
-                    <a href="#" class="nav-link active">
+                <li class="nav-item">
+                    <a href="#" class="nav-link ">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
                             Program Level
@@ -49,7 +49,7 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{url('program-level/create')}}" class="nav-link active">
+                            <a href="{{url('program-level/create')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Add Program Level</p>
                             </a>
@@ -58,31 +58,6 @@
                             <a href="{{url('program-level/show')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>View Program Level</p>
-                            </a>
-                        </li>
-
-                    </ul>
-                </li>
-
-                <li class="nav-item menu-open">
-                    <a href="#" class="nav-link active">
-                        <i class="nav-icon fas fa-tachometer-alt"></i>
-                        <p>
-                            Department
-                            <i class="right fas fa-angle-left"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="{{url('department/create')}}" class="nav-link active">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Add Department</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{url('department/show')}}" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>View Department</p>
                             </a>
                         </li>
 
@@ -99,13 +74,13 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="Add_Department.html" class="nav-link">
+                            <a href="{{url('department/create')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Add Department</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="View_Department.html" class="nav-link">
+                            <a href="{{url('department/show')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>View Department</p>
                             </a>
