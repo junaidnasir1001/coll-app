@@ -35,24 +35,11 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="">Class Room NUmber:</label>
-                                        <input type="number" class="form-control" name="class_room_number" id=""
-                                               placeholder="Enter Class Room Number" value="{{ old('class_room_number', $class_room->class_room_number) }}">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="">Block Name:</label>
-                                        <input type="text" class="form-control" name="block_name" id=""
-                                               placeholder="Enter Block Name" value="{{ old('block_name', $class_room->block_name) }}">
+                                        <label for="">Department Name:</label>
+                                        <input type="text" class="form-control" name="department" placeholder="Enter Department Name" value="{{ old('department', $department->department) }}">
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="">Seating Capacity</label>
-                                        <input type="number" class="form-control" name="seating_capacity" id=""
-                                               placeholder="Enter Seating Capacity" value="{{ old('seating_capacity', $class_room->seating_capacity) }}">
-                                    </div>
-                                </div>
-                                <input type="hidden" name="contactable_id" id="contactable_id" value="{{ old('id', $class_room->id) }}">
+                                <input type="hidden" name="contactable_id" id="contactable_id" value="{{ old('id', $department->id) }}">
                             </div>
                             <div class="row">
                                 <div class="col-md-12 ob-btn-login">
@@ -107,8 +94,8 @@
                     return false;
                 }
                 var id = $('#contactable_id').val();
-                var route = "{{route('class-room.update',['class_room'=>':class_room'])}}";
-                route = route.replace(':class_room', id);
+                var route = "{{route('department.update',['department'=>':department'])}}";
+                route = route.replace(':department', id);
                 $.ajax({
                     type: 'POST',
                     url: route,

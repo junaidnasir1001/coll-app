@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Department;
 use Illuminate\Http\Request;
-
+use DataTables;
 class DepartmentController extends Controller
 {
     /**
@@ -64,11 +64,13 @@ class DepartmentController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param  \App\Models\Department  $department
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
-    public function edit(Department $department)
+    public function edit($id)
     {
-        //
+        $department = Department::find($id);
+        //dd($class_room);
+        return view('admin.department.edit', compact('department'));
     }
 
     /**
@@ -76,11 +78,21 @@ class DepartmentController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\Department  $department
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function update(Request $request, Department $department)
     {
-        //
+        try {
+            $department->department = $request->department;
+            $department->save();
+            $response = array('status' => 'success', 'message' => 'Data Inserted Successful');
+            return response()->json($response, 200);
+
+        } catch (\Exception $exception) {
+
+            $response = array('status' => 'error', 'message' => $exception->getMessage());
+            return response()->json($response,500);
+        }
     }
 
     /**

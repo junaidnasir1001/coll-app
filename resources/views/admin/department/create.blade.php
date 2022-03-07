@@ -37,7 +37,6 @@
                                         <label for="">Department Name:</label>
                                         <input type="text" class="form-control" name="department" placeholder="Enter Department Name">
                                     </div>
-
                                 </div>
                             </div>
                             <div class="row">

@@ -22,7 +22,7 @@ Route::get('/program-level-list', [\App\Http\Controllers\ProgramLevelController:
 
 // Department Routes
 Route::resource('department', \App\Http\Controllers\DepartmentController::class);
-Route::get('/department-list', [\App\Http\Controllers\ProgramLevelController::class, 'showData'])->name('department.list');
+Route::get('/department-list', [\App\Http\Controllers\DepartmentController::class, 'showData'])->name('department.list');
 
 // Designation Routes
 Route::resource('designation', \App\Http\Controllers\DesignationController::class);
