@@ -12,6 +12,37 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/add-teacher', function () {
+    return view('admin.teacher.create');
+});
+
+Route::get('/view-teacher', function () {
+    return view('admin.teacher.view');
+});
+
+
+Route::get('/add-session', function () {
+    return view('admin.session_academic.create');
+});
+
+Route::get('/add-discipline', function () {
+    return view('admin.discipline.create');
+});
+
+Route::get('/add-year', function () {
+    return view('admin.year.create');
+});
+
+Route::get('/add-status', function () {
+    return view('admin.status.create');
+});
+
+Route::get('/add-subject', function () {
+    return view('admin.subject.create');
+});
+
+
+
  // Class Room Routes
 Route::resource('class-room', \App\Http\Controllers\ClassRoomController::class);
 Route::get('/class-room-list', [\App\Http\Controllers\ClassRoomController::class, 'showData'])->name('class-room.list');

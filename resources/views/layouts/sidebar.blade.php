@@ -65,6 +65,9 @@
                 </li>
 
                 <li class="nav-item">
+
+
+                    
                     <a href="#" class="nav-link ">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
@@ -127,13 +130,13 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="Add_Teacher.html" class="nav-link">
+                            <a href="{{url('add-teacher')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Add Teacher</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="View_Teacher.html" class="nav-link">
+                            <a href="{{url('view-teacher')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>View Teacher</p>
                             </a>
@@ -151,7 +154,7 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="Add_Session_Academic.html" class="nav-link">
+                            <a href="{{url('add-session')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Add Session Academic</p>
                             </a>
@@ -175,7 +178,7 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="Add_Discipline.html" class="nav-link">
+                            <a href="{{url('add-discipline')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Add Discipline</p>
                             </a>
@@ -200,7 +203,7 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="Add_Semester_Year.html" class="nav-link">
+                            <a href="{{url('add-year')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Add Semester/Year</p>
                             </a>
@@ -224,7 +227,7 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="Add_Status.html" class="nav-link">
+                            <a href="{{url('add-status')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Add Status</p>
                             </a>
@@ -249,7 +252,7 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="Add_Subject.html" class="nav-link">
+                            <a href="{{url('add-subject')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Add Subject</p>
                             </a>
