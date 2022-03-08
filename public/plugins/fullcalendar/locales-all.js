@@ -26,7 +26,7 @@
     code: 'ar-dz',
     week: {
       dow: 0, // Sunday is the first day of the week.
-      doy: 4, // The week that contains Jan 1st is the first week of the year.
+      doy: 4, // The week that contains Jan 1st is the first week of the semester.
     },
     direction: 'rtl',
     buttonText: {
@@ -48,7 +48,7 @@
     code: 'ar-kw',
     week: {
       dow: 0, // Sunday is the first day of the week.
-      doy: 12, // The week that contains Jan 1st is the first week of the year.
+      doy: 12, // The week that contains Jan 1st is the first week of the semester.
     },
     direction: 'rtl',
     buttonText: {
@@ -70,7 +70,7 @@
     code: 'ar-ly',
     week: {
       dow: 6, // Saturday is the first day of the week.
-      doy: 12, // The week that contains Jan 1st is the first week of the year.
+      doy: 12, // The week that contains Jan 1st is the first week of the semester.
     },
     direction: 'rtl',
     buttonText: {
@@ -92,7 +92,7 @@
     code: 'ar-ma',
     week: {
       dow: 6, // Saturday is the first day of the week.
-      doy: 12, // The week that contains Jan 1st is the first week of the year.
+      doy: 12, // The week that contains Jan 1st is the first week of the semester.
     },
     direction: 'rtl',
     buttonText: {
@@ -114,7 +114,7 @@
     code: 'ar-sa',
     week: {
       dow: 0, // Sunday is the first day of the week.
-      doy: 6, // The week that contains Jan 1st is the first week of the year.
+      doy: 6, // The week that contains Jan 1st is the first week of the semester.
     },
     direction: 'rtl',
     buttonText: {
@@ -136,7 +136,7 @@
     code: 'ar-tn',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     direction: 'rtl',
     buttonText: {
@@ -158,7 +158,7 @@
     code: 'ar',
     week: {
       dow: 6, // Saturday is the first day of the week.
-      doy: 12, // The week that contains Jan 1st is the first week of the year.
+      doy: 12, // The week that contains Jan 1st is the first week of the semester.
     },
     direction: 'rtl',
     buttonText: {
@@ -180,7 +180,7 @@
     code: 'az',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'Əvvəl',
@@ -203,7 +203,7 @@
     code: 'bg',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 7, // The week that contains Jan 1st is the first week of the year.
+      doy: 7, // The week that contains Jan 1st is the first week of the semester.
     },
     buttonText: {
       prev: 'назад',
@@ -225,7 +225,7 @@
     code: 'bn',
     week: {
       dow: 0, // Sunday is the first day of the week.
-      doy: 6, // The week that contains Jan 1st is the first week of the year.
+      doy: 6, // The week that contains Jan 1st is the first week of the semester.
     },
     buttonText: {
       prev: 'পেছনে',
@@ -248,7 +248,7 @@
     code: 'bs',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 7, // The week that contains Jan 1st is the first week of the year.
+      doy: 7, // The week that contains Jan 1st is the first week of the semester.
     },
     buttonText: {
       prev: 'Prošli',
@@ -271,7 +271,7 @@
     code: 'ca',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'Anterior',
@@ -292,7 +292,7 @@
     code: 'cs',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'Dříve',
@@ -315,7 +315,7 @@
     code: 'cy',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'Blaenorol',
@@ -337,7 +337,7 @@
     code: 'da',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'Forrige',
@@ -363,7 +363,7 @@
     code: 'de-at',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'Zurück',
@@ -422,7 +422,7 @@
     code: 'de',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'Zurück',
@@ -476,7 +476,7 @@
     code: 'el',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4st is the first week of the year.
+      doy: 4, // The week that contains Jan 4st is the first week of the semester.
     },
     buttonText: {
       prev: 'Προηγούμενος',
@@ -497,7 +497,7 @@
     code: 'en-au',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonHints: {
       prev: 'Previous $0',
@@ -515,7 +515,7 @@
     code: 'en-gb',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonHints: {
       prev: 'Previous $0',
@@ -533,7 +533,7 @@
     code: 'en-nz',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonHints: {
       prev: 'Previous $0',
@@ -551,7 +551,7 @@
     code: 'eo',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'Antaŭa',
@@ -572,7 +572,7 @@
     code: 'es',
     week: {
       dow: 0, // Sunday is the first day of the week.
-      doy: 6, // The week that contains Jan 1st is the first week of the year.
+      doy: 6, // The week that contains Jan 1st is the first week of the semester.
     },
     buttonText: {
       prev: 'Ant',
@@ -593,7 +593,7 @@
     code: 'es',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'Ant',
@@ -633,7 +633,7 @@
     code: 'et',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'Eelnev',
@@ -656,7 +656,7 @@
     code: 'eu',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 7, // The week that contains Jan 1st is the first week of the year.
+      doy: 7, // The week that contains Jan 1st is the first week of the semester.
     },
     buttonText: {
       prev: 'Aur',
@@ -677,7 +677,7 @@
     code: 'fa',
     week: {
       dow: 6, // Saturday is the first day of the week.
-      doy: 12, // The week that contains Jan 1st is the first week of the year.
+      doy: 12, // The week that contains Jan 1st is the first week of the semester.
     },
     direction: 'rtl',
     buttonText: {
@@ -701,7 +701,7 @@
     code: 'fi',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'Edellinen',
@@ -740,7 +740,7 @@
     code: 'fr-ch',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'Précédent',
@@ -762,7 +762,7 @@
     code: 'fr',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'Précédent',
@@ -784,7 +784,7 @@
     code: 'gl',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'Ant',
@@ -823,7 +823,7 @@
     code: 'hi',
     week: {
       dow: 0, // Sunday is the first day of the week.
-      doy: 6, // The week that contains Jan 1st is the first week of the year.
+      doy: 6, // The week that contains Jan 1st is the first week of the semester.
     },
     buttonText: {
       prev: 'पिछला',
@@ -846,7 +846,7 @@
     code: 'hr',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 7, // The week that contains Jan 1st is the first week of the year.
+      doy: 7, // The week that contains Jan 1st is the first week of the semester.
     },
     buttonText: {
       prev: 'Prijašnji',
@@ -869,7 +869,7 @@
     code: 'hu',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'vissza',
@@ -890,7 +890,7 @@
     code: 'hy-am',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'Նախորդ',
@@ -913,7 +913,7 @@
     code: 'id',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 7, // The week that contains Jan 1st is the first week of the year.
+      doy: 7, // The week that contains Jan 1st is the first week of the semester.
     },
     buttonText: {
       prev: 'mundur',
@@ -934,7 +934,7 @@
     code: 'is',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'Fyrri',
@@ -955,7 +955,7 @@
     code: 'it',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'Prec',
@@ -1020,7 +1020,7 @@
     code: 'kk',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 7, // The week that contains Jan 1st is the first week of the year.
+      doy: 7, // The week that contains Jan 1st is the first week of the semester.
     },
     buttonText: {
       prev: 'Алдыңғы',
@@ -1043,7 +1043,7 @@
     code: 'km',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'មុន',
@@ -1082,7 +1082,7 @@
     code: 'ku',
     week: {
       dow: 6, // Saturday is the first day of the week.
-      doy: 12, // The week that contains Jan 1st is the first week of the year.
+      doy: 12, // The week that contains Jan 1st is the first week of the semester.
     },
     direction: 'rtl',
     buttonText: {
@@ -1104,7 +1104,7 @@
     code: 'lb',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'Zréck',
@@ -1125,7 +1125,7 @@
     code: 'lt',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'Atgal',
@@ -1146,7 +1146,7 @@
     code: 'lv',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'Iepr.',
@@ -1188,7 +1188,7 @@
     code: 'ms',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 7, // The week that contains Jan 1st is the first week of the year.
+      doy: 7, // The week that contains Jan 1st is the first week of the semester.
     },
     buttonText: {
       prev: 'Sebelum',
@@ -1211,7 +1211,7 @@
     code: 'nb',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'Forrige',
@@ -1243,7 +1243,7 @@
     code: 'ne', // code for nepal
     week: {
       dow: 7, // Sunday is the first day of the week.
-      doy: 1, // The week that contains Jan 1st is the first week of the year.
+      doy: 1, // The week that contains Jan 1st is the first week of the semester.
     },
     buttonText: {
       prev: 'अघिल्लो',
@@ -1264,7 +1264,7 @@
     code: 'nl',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'Vorige',
@@ -1285,7 +1285,7 @@
     code: 'nn',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'Førre',
@@ -1306,7 +1306,7 @@
     code: 'pl',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'Poprzedni',
@@ -1346,7 +1346,7 @@
     code: 'pt',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'Anterior',
@@ -1367,7 +1367,7 @@
     code: 'ro',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 7, // The week that contains Jan 1st is the first week of the year.
+      doy: 7, // The week that contains Jan 1st is the first week of the semester.
     },
     buttonText: {
       prev: 'precedentă',
@@ -1390,7 +1390,7 @@
     code: 'ru',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'Пред',
@@ -1413,7 +1413,7 @@
     code: 'si-lk',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'පෙර',
@@ -1434,7 +1434,7 @@
     code: 'sk',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'Predchádzajúci',
@@ -1457,7 +1457,7 @@
     code: 'sl',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 7, // The week that contains Jan 1st is the first week of the year.
+      doy: 7, // The week that contains Jan 1st is the first week of the semester.
     },
     buttonText: {
       prev: 'Prejšnji',
@@ -1495,7 +1495,7 @@
     code: 'sq',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'mbrapa',
@@ -1518,7 +1518,7 @@
     code: 'sr-cyrl',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 7, // The week that contains Jan 1st is the first week of the year.
+      doy: 7, // The week that contains Jan 1st is the first week of the semester.
     },
     buttonText: {
       prev: 'Претходна',
@@ -1541,7 +1541,7 @@
     code: 'sr',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 7, // The week that contains Jan 1st is the first week of the year.
+      doy: 7, // The week that contains Jan 1st is the first week of the semester.
     },
     buttonText: {
       prev: 'Prethodna',
@@ -1564,7 +1564,7 @@
     code: 'sv',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'Förra',
@@ -1605,7 +1605,7 @@
     code: 'ta-in',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'முந்தைய',
@@ -1628,7 +1628,7 @@
     code: 'th',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'ก่อนหน้า',
@@ -1652,7 +1652,7 @@
     code: 'tr',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 7, // The week that contains Jan 1st is the first week of the year.
+      doy: 7, // The week that contains Jan 1st is the first week of the semester.
     },
     buttonText: {
       prev: 'geri',
@@ -1684,7 +1684,7 @@
     code: 'uk',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 7, // The week that contains Jan 1st is the first week of the year.
+      doy: 7, // The week that contains Jan 1st is the first week of the semester.
     },
     buttonText: {
       prev: 'Попередній',
@@ -1722,7 +1722,7 @@
     code: 'vi',
     week: {
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: 'Trước',
@@ -1746,7 +1746,7 @@
     week: {
       // GB/T 7408-1994《数据元和交换格式·信息交换·日期和时间表示法》与ISO 8601:1988等效
       dow: 1, // Monday is the first day of the week.
-      doy: 4, // The week that contains Jan 4th is the first week of the year.
+      doy: 4, // The week that contains Jan 4th is the first week of the semester.
     },
     buttonText: {
       prev: '上月',
@@ -1785,7 +1785,7 @@
   /* eslint max-len: off */
 
   var localesAll = [
-    l0, l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, l16, l17, l18, l19, l20, l21, l22, l23, l24, l25, l26, l27, l28, l29, l30, l31, l32, l33, l34, l35, l36, l37, l38, l39, l40, l41, l42, l43, l44, l45, l46, l47, l48, l49, l50, l51, l52, l53, l54, l55, l56, l57, l58, l59, l60, l61, l62, l63, l64, l65, l66, l67, l68, l69, l70, l71, l72, l73, l74, l75, l76, l77, 
+    l0, l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, l16, l17, l18, l19, l20, l21, l22, l23, l24, l25, l26, l27, l28, l29, l30, l31, l32, l33, l34, l35, l36, l37, l38, l39, l40, l41, l42, l43, l44, l45, l46, l47, l48, l49, l50, l51, l52, l53, l54, l55, l56, l57, l58, l59, l60, l61, l62, l63, l64, l65, l66, l67, l68, l69, l70, l71, l72, l73, l74, l75, l76, l77,
   ];
 
   return localesAll;

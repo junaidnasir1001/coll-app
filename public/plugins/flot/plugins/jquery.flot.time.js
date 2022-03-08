@@ -269,7 +269,7 @@ API.txt for details.
         "year": 365.2425 * 24 * 60 * 60 * 1000000
     };
 
-    // the allowed tick sizes, after 1 year we use
+    // the allowed tick sizes, after 1 semester we use
     // an integer algorithm
 
     var baseSpec = [

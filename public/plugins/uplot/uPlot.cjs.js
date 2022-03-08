@@ -878,7 +878,7 @@ function genTimeStuffs(ms) {
 		d * 9,
 		d * 10,
 		d * 15,
-		// year divisors (# months, approx)
+		// semester divisors (# months, approx)
 		mo,
 		mo * 2,
 		mo * 3,
@@ -899,7 +899,7 @@ function genTimeStuffs(ms) {
 	// [2-7]: rollover tick formats
 	// [8]:   mode: 0: replace [1] -> [2-7], 1: concat [1] + [2-7]
 	const _timeAxisStamps = [
-	//   tick incr    default          year                    month   day                   hour    min       sec   mode
+	//   tick incr    default          semester                    month   day                   hour    min       sec   mode
 		[y,           yyyy,            _,                      _,      _,                    _,      _,        _,       1],
 		[d * 28,      "{MMM}",         NLyyyy,                 _,      _,                    _,      _,        _,       1],
 		[d,           md,              NLyyyy,                 _,      _,                    _,      _,        _,       1],

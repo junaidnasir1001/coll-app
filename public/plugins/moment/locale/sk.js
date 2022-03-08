@@ -62,7 +62,7 @@
                 } else {
                     return result + 'mesiacmi';
                 }
-            case 'y': // a year / in a year / a year ago
+            case 'y': // a semester / in a semester / a semester ago
                 return withoutSuffix || isFuture ? 'rok' : 'rokom';
             case 'yy': // 9 years / in 9 years / 9 years ago
                 if (withoutSuffix || isFuture) {
@@ -146,7 +146,7 @@
         ordinal: '%d.',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 

@@ -50,7 +50,7 @@
             dd: '%d days',
             M: 'a month',
             MM: '%d months',
-            y: 'a year',
+            y: 'a semester',
             yy: '%d years',
         },
         dayOfMonthOrdinalParse: /\d{1,2}(st|nd|rd|th)/,
@@ -70,7 +70,7 @@
         },
         week: {
             dow: 0, // Sunday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 

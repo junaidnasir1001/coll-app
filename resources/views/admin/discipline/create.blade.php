@@ -30,64 +30,51 @@
             </div>
             <!-- /.card-header -->
             <!-- form start -->
-            <form>
-                
+            <form id="form">
+                @csrf
               <div class="card-body">
                 <div class="row">
 
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="">Discipline Name:</label>
-                            <input type="text" class="form-control" id="" placeholder="Enter Discipline Name">
+                            <input type="text" class="form-control" name="discipline_name" id="" placeholder="Enter Discipline Name">
                           </div>
                           <div class="form-group">
                             <label for="">Discipline Short Code:</label>
-                            <input type="text" class="form-control" id="" placeholder="Enter Discipline Short Code">
+                            <input type="text" class="form-control" id="" name="discipline_shor_code" placeholder="Enter Discipline Short Code">
                           </div>
                           <div class="form-group">
                             <label>Department Name:</label>
-                            <select class="form-control select2" style="width: 100%;">
-                              <option selected="selected">Select Department Name</option>
-                              <option> D1</option>
-                              <option>D2</option>                            
+                            <select class="form-control select2 " name="department_name" style="width: 100%;">
+                                <option value="" selected="selected" disabled selected>...Select Department Name...</option>
+                                @foreach($department as $depart)
+                                <option value="{{$depart->id}}"> {{$depart->department}}</option>
+                                @endforeach
                             </select>
                           </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="">Shift:</label>
-                            <input type="text" class="form-control" id="" placeholder="Enter Shift">
+                            <input type="text" name="shift" class="form-control" id="" placeholder="Enter Shift">
                         </div>
                         <div class="form-group">
                             <label for="">Subject Combination:</label>
-                            <input type="text" class="form-control" id="" placeholder="Enter Subject Combination">
+                            <input type="text" name="subject_combination" class="form-control" id="" placeholder="Enter Subject Combination">
                           </div>
                           <div class="form-group">
                             <label for="">Affiliated From:</label>
-                            <input type="text" class="form-control" id="" placeholder="Enter Affiliated From">
+                            <input type="text" name="afffiliated_form" class="form-control" id="" placeholder="Enter Affiliated From">
                           </div>
                     </div>
- 
-                 </div>
-                
-                 <button type="submit" class="btn btn-primary">Add</button>
-               
-              </div>
-              
 
-             
-                
-             
+                 </div>
+                 <button type="submit" class="btn btn-primary">Add</button>
+              </div>
             </form>
           </div>
         <!-- /.card -->
-
-       
-
-
-       
-       
-       
         <!-- /.row -->
       </div>
       <!-- /.container-fluid -->
@@ -124,7 +111,7 @@
                 if (!$('#form').valid()) {
                     return false;
                 }
-                let route = "{{route('designation.store')}}";
+                let route = "{{route('discipline.store')}}";
                 console.log(route)
                 $.ajax({
                     type: 'POST',

@@ -12,7 +12,7 @@
 
     //! moment.js locale configuration
 
-    // After the year there should be a slash and the amount of years since December 26, 1979 in Roman numerals.
+    // After the semester there should be a slash and the amount of years since December 26, 1979 in Roman numerals.
     // This is currently too difficult (maybe even impossible) to add.
     var tzl = moment.defineLocale('tzl', {
         months: 'Januar_Fevraglh_Març_Avrïu_Mai_Gün_Julia_Guscht_Setemvar_Listopäts_Noemvar_Zecemvar'.split(
@@ -69,7 +69,7 @@
         ordinal: '%d.',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 

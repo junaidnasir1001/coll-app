@@ -29,27 +29,26 @@
             </div>
             <!-- /.card-header -->
             <!-- form start -->
-            <form>
-                
+            <form id="form">
+            @csrf
               <div class="card-body">
                 <div class="row">
-
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="">Session:</label>
-                            <input type="text" class="form-control" id="" placeholder="Enter Designation Name">
+                            <input type="text" class="form-control" id="" name="add_session" placeholder="Enter Designation Name">
                           </div>
-                          
+
                     </div>
-                    
- 
+
+
                  </div>
-                
-                 <button type="" class="btn btn-primary">Add</button>
-               
+
+                 <button type="submit" class="btn btn-primary">Add</button>
+
               </div>
             </form>
-          </div>  
+          </div>
         <!-- /.row -->
       </div>
       <!-- /.container-fluid -->
@@ -86,7 +85,7 @@
                 if (!$('#form').valid()) {
                     return false;
                 }
-                let route = "{{route('designation.store')}}";
+                let route = "{{route('session-academic.store')}}";
                 console.log(route)
                 $.ajax({
                     type: 'POST',
@@ -113,7 +112,6 @@
                     }
                 });
             });
-
         });
     </script>
 

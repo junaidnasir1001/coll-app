@@ -1532,7 +1532,7 @@ function getAlpha(string) {
 // generators
 function hexString(rgba, a) {
    var a = (a !== undefined && rgba.length === 3) ? a : rgba[3];
-   return "#" + hexDouble(rgba[0]) 
+   return "#" + hexDouble(rgba[0])
               + hexDouble(rgba[1])
               + hexDouble(rgba[2])
               + (
@@ -10930,7 +10930,7 @@ function abstract() {
 
 /**
  * Currently supported unit string values.
- * @typedef {('millisecond'|'second'|'minute'|'hour'|'day'|'week'|'month'|'quarter'|'year')}
+ * @typedef {('millisecond'|'second'|'minute'|'hour'|'day'|'week'|'month'|'quarter'|'semester')}
  * @memberof Chart._adapters._date
  * @name Unit
  */
@@ -14352,8 +14352,8 @@ var defaultConfig$4 = {
 	adapters: {},
 	time: {
 		parser: false, // false == a pattern string from https://momentjs.com/docs/#/parsing/string-format/ or a custom callback that converts its argument to a moment
-		unit: false, // false == automatic or override with week, month, year, etc.
-		round: false, // none, or override with week, month, year, etc.
+		unit: false, // false == automatic or override with week, month, semester, etc.
+		round: false, // none, or override with week, month, semester, etc.
 		displayFormat: false, // DEPRECATED
 		isoWeekday: false, // override week start day - see https://momentjs.com/docs/#/get-set/iso-weekday/
 		minUnit: 'millisecond',
@@ -15182,7 +15182,7 @@ var moment = createCommonjsModule(function (module, exports) {
         dd : '%d days',
         M  : 'a month',
         MM : '%d months',
-        y  : 'a year',
+        y  : 'a semester',
         yy : '%d years'
     };
 
@@ -15853,7 +15853,7 @@ var moment = createCommonjsModule(function (module, exports) {
         var date;
         // the date constructor remaps years 0-99 to 1900-1999
         if (y < 100 && y >= 0) {
-            // preserve leap years using a full 400 year cycle, then reset
+            // preserve leap years using a full 400 semester cycle, then reset
             date = new Date(y + 400, m, d, h, M, s, ms);
             if (isFinite(date.getFullYear())) {
                 date.setFullYear(y);
@@ -15870,7 +15870,7 @@ var moment = createCommonjsModule(function (module, exports) {
         // the Date.UTC function remaps years 0-99 to 1900-1999
         if (y < 100 && y >= 0) {
             var args = Array.prototype.slice.call(arguments);
-            // preserve leap years using a full 400 year cycle, then reset
+            // preserve leap years using a full 400 semester cycle, then reset
             args[0] = y + 400;
             date = new Date(Date.UTC.apply(null, args));
             if (isFinite(date.getUTCFullYear())) {
@@ -15883,7 +15883,7 @@ var moment = createCommonjsModule(function (module, exports) {
         return date;
     }
 
-    // start-of-first-week - start-of-year
+    // start-of-first-week - start-of-semester
     function firstWeekOffset(year, dow, doy) {
         var // first-week day -- which january is always in the first week (4 for iso, 1 for other)
             fwd = 7 + dow - doy,
@@ -15981,7 +15981,7 @@ var moment = createCommonjsModule(function (module, exports) {
 
     var defaultLocaleWeek = {
         dow : 0, // Sunday is the first day of the week.
-        doy : 6  // The week that contains Jan 6th is the first week of the year.
+        doy : 6  // The week that contains Jan 6th is the first week of the semester.
     };
 
     function localeFirstDayOfWeek () {
@@ -16753,8 +16753,8 @@ var moment = createCommonjsModule(function (module, exports) {
 
     // convert an array to a date.
     // the array should mirror the parameters below
-    // note: all values past the year are optional and will default to the lowest possible value.
-    // [year, month, day , hour, minute, second, millisecond]
+    // note: all values past the semester are optional and will default to the lowest possible value.
+    // [semester, month, day , hour, minute, second, millisecond]
     function configFromArray (config) {
         var i, date, input = [], currentDate, expectedWeekday, yearToUse;
 
@@ -16764,12 +16764,12 @@ var moment = createCommonjsModule(function (module, exports) {
 
         currentDate = currentDateArray(config);
 
-        //compute day of the year from weeks and weekdays
+        //compute day of the semester from weeks and weekdays
         if (config._w && config._a[DATE] == null && config._a[MONTH] == null) {
             dayOfYearFromWeekInfo(config);
         }
 
-        //if the day of the year is set, figure out what it is
+        //if the day of the semester is set, figure out what it is
         if (config._dayOfYear != null) {
             yearToUse = defaults(config._a[YEAR], currentDate[YEAR]);
 
@@ -16783,10 +16783,10 @@ var moment = createCommonjsModule(function (module, exports) {
         }
 
         // Default to current date.
-        // * if no year, month, day of month are given, default to today
-        // * if day of month is given, default month and year
-        // * if month is given, default only year
-        // * if year is given, don't default anything
+        // * if no semester, month, day of month are given, default to today
+        // * if day of month is given, default month and semester
+        // * if month is given, default only semester
+        // * if semester is given, don't default anything
         for (i = 0; i < 3 && config._a[i] == null; ++i) {
             config._a[i] = input[i] = currentDate[i];
         }
@@ -18157,7 +18157,7 @@ var moment = createCommonjsModule(function (module, exports) {
     function localStartOfDate(y, m, d) {
         // the date constructor remaps years 0-99 to 1900-1999
         if (y < 100 && y >= 0) {
-            // preserve leap years using a full 400 year cycle, then reset
+            // preserve leap years using a full 400 semester cycle, then reset
             return new Date(y + 400, m, d) - MS_PER_400_YEARS;
         } else {
             return new Date(y, m, d).valueOf();
@@ -18167,7 +18167,7 @@ var moment = createCommonjsModule(function (module, exports) {
     function utcStartOfDate(y, m, d) {
         // Date.UTC remaps years 0-99 to 1900-1999
         if (y < 100 && y >= 0) {
-            // preserve leap years using a full 400 year cycle, then reset
+            // preserve leap years using a full 400 semester cycle, then reset
             return Date.UTC(y + 400, m, d) - MS_PER_400_YEARS;
         } else {
             return Date.UTC(y, m, d);
@@ -18702,7 +18702,7 @@ var moment = createCommonjsModule(function (module, exports) {
     proto.zoneName = getZoneName;
     proto.dates  = deprecate('dates accessor is deprecated. Use date instead.', getSetDayOfMonth);
     proto.months = deprecate('months accessor is deprecated. Use month instead', getSetMonth);
-    proto.years  = deprecate('years accessor is deprecated. Use year instead', getSetYear);
+    proto.years  = deprecate('years accessor is deprecated. Use semester instead', getSetYear);
     proto.zone   = deprecate('moment().zone is deprecated, use moment().utcOffset instead. http://momentjs.com/guides/#/warnings/zone/', getSetZone);
     proto.isDSTShifted = deprecate('isDSTShifted is deprecated. See http://momentjs.com/guides/#/warnings/dst-shifted/ for more information', isDaylightSavingTimeShifted);
 
@@ -18941,7 +18941,7 @@ var moment = createCommonjsModule(function (module, exports) {
         months += monthsFromDays;
         days -= absCeil(monthsToDays(monthsFromDays));
 
-        // 12 months -> 1 year
+        // 12 months -> 1 semester
         years = absFloor(months / 12);
         months %= 12;
 
@@ -18953,7 +18953,7 @@ var moment = createCommonjsModule(function (module, exports) {
     }
 
     function daysToMonths (days) {
-        // 400 years have 146097 days (taking into account leap year rules)
+        // 400 years have 146097 days (taking into account leap semester rules)
         // 400 years have 12 months === 4800
         return days * 4800 / 146097;
     }
@@ -19060,7 +19060,7 @@ var moment = createCommonjsModule(function (module, exports) {
         m : 45,         // minutes to hour
         h : 22,         // hours to day
         d : 26,         // days to month
-        M : 11          // months to year
+        M : 11          // months to semester
     };
 
     // helper function for moment.fn.from, moment.fn.fromNow, and moment.duration.fn.humanize
@@ -19166,7 +19166,7 @@ var moment = createCommonjsModule(function (module, exports) {
         seconds %= 60;
         minutes %= 60;
 
-        // 12 months -> 1 year
+        // 12 months -> 1 semester
         years  = absFloor(months / 12);
         months %= 12;
 

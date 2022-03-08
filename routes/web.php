@@ -12,34 +12,32 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/add-teacher', function () {
-    return view('admin.teacher.create');
-});
 
-Route::get('/view-teacher', function () {
-    return view('admin.teacher.view');
-});
+// Teacher Routes
+Route::resource('teacher', \App\Http\Controllers\TeacherController::class);
+Route::get('/teacher-list', [\App\Http\Controllers\TeacherController::class, 'showData'])->name('teacher.list');
 
 
-Route::get('/add-session', function () {
-    return view('admin.session_academic.create');
-});
+// Session Academic Routes
+Route::resource('session-academic', \App\Http\Controllers\SessionAcademicController::class);
+Route::get('/session-academic-list', [\App\Http\Controllers\SessionAcademicController::class, 'showData'])->name('session-academic.list');
 
-Route::get('/add-discipline', function () {
-    return view('admin.discipline.create');
-});
+// Discipline Routes
+Route::resource('discipline', \App\Http\Controllers\DisciplineController::class);
+Route::get('/discipline-list', [\App\Http\Controllers\DisciplineController::class, 'showData'])->name('discipline.list');
 
-Route::get('/add-year', function () {
-    return view('admin.year.create');
-});
+
+// Semester Routes
+Route::resource('semester', \App\Http\Controllers\SemesterController::class);
+Route::get('/semester-list', [\App\Http\Controllers\SemesterController::class, 'showData'])->name('semester.list');
 
 Route::get('/add-status', function () {
     return view('admin.status.create');
 });
 
-Route::get('/add-subject', function () {
-    return view('admin.subject.create');
-});
+// Subject Routes
+Route::resource('subject', \App\Http\Controllers\SubjectController::class);
+Route::get('/subject-list', [\App\Http\Controllers\SubjectController::class, 'showData'])->name('subject.list');
 
 
 

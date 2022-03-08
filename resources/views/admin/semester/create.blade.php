@@ -29,40 +29,24 @@
             </div>
             <!-- /.card-header -->
             <!-- form start -->
-            <form>
-                
+            <form id="form">
+            @csrf
               <div class="card-body">
                 <div class="row">
 
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="">Semester/Year:</label>
-                            <input type="text" class="form-control" id="" placeholder="Enter Semester/Year">
+                            <input type="text" class="form-control" id="" name="semester" placeholder="Enter Semester/Year">
                           </div>
-                          
-                    </div>
-                    
- 
-                 </div>
-                
-                 <button type="submit" class="btn btn-primary">Add</button>
-               
-              </div>
-              
 
-             
-                
-             
+                    </div>
+                 </div>
+                 <button type="submit" class="btn btn-primary">Add</button>
+              </div>
             </form>
           </div>
         <!-- /.card -->
-
-       
-
-
-       
-       
-       
         <!-- /.row -->
       </div>
       <!-- /.container-fluid -->
@@ -99,7 +83,7 @@
                 if (!$('#form').valid()) {
                     return false;
                 }
-                let route = "{{route('designation.store')}}";
+                let route = "{{route('semester.store')}}";
                 console.log(route)
                 $.ajax({
                     type: 'POST',
@@ -129,6 +113,4 @@
 
         });
     </script>
-
-
 @endpush

@@ -600,7 +600,7 @@ var FullCalendar = (function (exports) {
         var days = Math.round(diffDays(firstWeekStart, dayStart));
         return Math.floor(days / 7) + 1; // zero-indexed
     }
-    // start-of-first-week - start-of-year
+    // start-of-first-week - start-of-semester
     function firstWeekOffset(year, dow, doy) {
         // first-week day -- which january is always in the first week (4 for iso, 1 for other)
         var fwd = 7 + dow - doy;
@@ -637,7 +637,7 @@ var FullCalendar = (function (exports) {
     }
     function arrayToUtcDate(a) {
         // according to web standards (and Safari), a month index is required.
-        // massage if only given a year.
+        // massage if only given a semester.
         if (a.length === 1) {
             a = a.concat([0]);
         }
@@ -4186,14 +4186,14 @@ var FullCalendar = (function (exports) {
         code: 'en',
         week: {
             dow: 0,
-            doy: 4, // 4 days need to be within the year to be considered the first week
+            doy: 4, // 4 days need to be within the semester to be considered the first week
         },
         direction: 'ltr',
         buttonText: {
             prev: 'prev',
             next: 'next',
-            prevYear: 'prev year',
-            nextYear: 'next year',
+            prevYear: 'prev semester',
+            nextYear: 'next semester',
             year: 'year',
             today: 'today',
             month: 'month',
@@ -4210,7 +4210,7 @@ var FullCalendar = (function (exports) {
         moreLinkText: 'more',
         noEventsText: 'No events to display',
     };
-    var RAW_EN_LOCALE = __assign(__assign({}, MINIMAL_RAW_EN_LOCALE), { 
+    var RAW_EN_LOCALE = __assign(__assign({}, MINIMAL_RAW_EN_LOCALE), {
         // Includes things we don't want other locales to inherit,
         // things that derive from other translatable strings.
         buttonHints: {
@@ -6789,7 +6789,7 @@ var FullCalendar = (function (exports) {
         var endMarker = framingRange.end;
         var instanceStarts = [];
         while (dayMarker < endMarker) {
-            var instanceStart 
+            var instanceStart
             // if everyday, or this particular day-of-week
             = void 0;
             // if everyday, or this particular day-of-week
@@ -12948,7 +12948,7 @@ var FullCalendar = (function (exports) {
             var start = renderRange.start;
             var end = renderRange.end;
             var endOfWeek;
-            // year and month views should be aligned with weeks. this is already done for week
+            // semester and month views should be aligned with weeks. this is already done for week
             if (/^(year|month)$/.test(currentRangeUnit)) {
                 start = dateEnv.startOfWeek(start);
                 // make end-of-week if not already
@@ -13816,7 +13816,7 @@ var FullCalendar = (function (exports) {
             if (!slatCoords) {
                 return null;
             }
-            return segs.map(function (seg, i) { return (createElement(NowIndicatorRoot, { isAxis: false, date: date, 
+            return segs.map(function (seg, i) { return (createElement(NowIndicatorRoot, { isAxis: false, date: date,
                 // key doesn't matter. will only ever be one
                 key: i }, function (rootElRef, classNames, innerElRef, innerContent) { return (createElement("div", { ref: rootElRef, className: ['fc-timegrid-now-indicator-line'].concat(classNames).join(' '), style: { top: slatCoords.computeDateTop(seg.start, date) } }, innerContent)); })); });
         };

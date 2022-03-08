@@ -218,7 +218,7 @@
         },
         week: {
             dow: 0, // Sunday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -269,7 +269,7 @@
         },
         week: {
             dow: 0, // Sunday is the first day of the week.
-            doy: 12, // The week that contains Jan 12th is the first week of the year.
+            doy: 12, // The week that contains Jan 12th is the first week of the semester.
         },
     });
 
@@ -437,7 +437,7 @@
         },
         week: {
             dow: 6, // Saturday is the first day of the week.
-            doy: 12, // The week that contains Jan 12th is the first week of the year.
+            doy: 12, // The week that contains Jan 12th is the first week of the semester.
         },
     });
 
@@ -488,7 +488,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -589,7 +589,7 @@
         },
         week: {
             dow: 0, // Sunday is the first day of the week.
-            doy: 6, // The week that contains Jan 6th is the first week of the year.
+            doy: 6, // The week that contains Jan 6th is the first week of the semester.
         },
     });
 
@@ -640,7 +640,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -824,7 +824,7 @@
         },
         week: {
             dow: 6, // Saturday is the first day of the week.
-            doy: 12, // The week that contains Jan 12th is the first week of the year.
+            doy: 12, // The week that contains Jan 12th is the first week of the semester.
         },
     });
 
@@ -922,7 +922,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 7, // The week that contains Jan 7th is the first week of the year.
+            doy: 7, // The week that contains Jan 7th is the first week of the semester.
         },
     });
 
@@ -1058,7 +1058,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 7, // The week that contains Jan 7th is the first week of the year.
+            doy: 7, // The week that contains Jan 7th is the first week of the semester.
         },
     });
 
@@ -1142,7 +1142,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 7, // The week that contains Jan 7th is the first week of the year.
+            doy: 7, // The week that contains Jan 7th is the first week of the semester.
         },
     });
 
@@ -1190,7 +1190,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -1315,7 +1315,7 @@
         },
         week: {
             dow: 0, // Sunday is the first day of the week.
-            doy: 6, // The week that contains Jan 6th is the first week of the year.
+            doy: 6, // The week that contains Jan 6th is the first week of the semester.
         },
     });
 
@@ -1430,7 +1430,7 @@
         },
         week: {
             dow: 0, // Sunday is the first day of the week.
-            doy: 6, // The week that contains Jan 6th is the first week of the year.
+            doy: 6, // The week that contains Jan 6th is the first week of the semester.
         },
     });
 
@@ -1549,7 +1549,7 @@
         },
         week: {
             dow: 0, // Sunday is the first day of the week.
-            doy: 6, // The week that contains Jan 6th is the first week of the year.
+            doy: 6, // The week that contains Jan 6th is the first week of the semester.
         },
     });
 
@@ -1704,7 +1704,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
         meridiemParse: /a.m.|g.m./, // goude merenn | a-raok merenn
         isPM: function (token) {
@@ -1856,7 +1856,7 @@
         ordinal: '%d.',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 7, // The week that contains Jan 7th is the first week of the year.
+            doy: 7, // The week that contains Jan 7th is the first week of the semester.
         },
     });
 
@@ -1950,7 +1950,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -2024,7 +2024,7 @@
                 } else {
                     return result + 'měsíci';
                 }
-            case 'y': // a year / in a year / a year ago
+            case 'y': // a semester / in a semester / a semester ago
                 return withoutSuffix || isFuture ? 'rok' : 'rokem';
             case 'yy': // 9 years / in 9 years / 9 years ago
                 if (withoutSuffix || isFuture) {
@@ -2118,7 +2118,7 @@
         ordinal: '%d.',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -2177,7 +2177,7 @@
         ordinal: '%d-мӗш',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 7, // The week that contains Jan 7th is the first week of the year.
+            doy: 7, // The week that contains Jan 7th is the first week of the semester.
         },
     });
 
@@ -2270,7 +2270,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -2320,7 +2320,7 @@
         ordinal: '%d.',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -2393,7 +2393,7 @@
         ordinal: '%d.',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -2466,7 +2466,7 @@
         ordinal: '%d.',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -2539,7 +2539,7 @@
         ordinal: '%d.',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -2626,7 +2626,7 @@
         },
         week: {
             dow: 7, // Sunday is the first day of the week.
-            doy: 12, // The week that contains Jan 12th is the first week of the year.
+            doy: 12, // The week that contains Jan 12th is the first week of the semester.
         },
     });
 
@@ -2727,7 +2727,7 @@
         ordinal: '%dη',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4st is the first week of the year.
+            doy: 4, // The week that contains Jan 4st is the first week of the semester.
         },
     });
 
@@ -2772,7 +2772,7 @@
             dd: '%d days',
             M: 'a month',
             MM: '%d months',
-            y: 'a year',
+            y: 'a semester',
             yy: '%d years',
         },
         dayOfMonthOrdinalParse: /\d{1,2}(st|nd|rd|th)/,
@@ -2792,7 +2792,7 @@
         },
         week: {
             dow: 0, // Sunday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -2837,7 +2837,7 @@
             dd: '%d days',
             M: 'a month',
             MM: '%d months',
-            y: 'a year',
+            y: 'a semester',
             yy: '%d years',
         },
         dayOfMonthOrdinalParse: /\d{1,2}(st|nd|rd|th)/,
@@ -2898,7 +2898,7 @@
             dd: '%d days',
             M: 'a month',
             MM: '%d months',
-            y: 'a year',
+            y: 'a semester',
             yy: '%d years',
         },
         dayOfMonthOrdinalParse: /\d{1,2}(st|nd|rd|th)/,
@@ -2918,7 +2918,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -2963,7 +2963,7 @@
             dd: '%d days',
             M: 'a month',
             MM: '%d months',
-            y: 'a year',
+            y: 'a semester',
             yy: '%d years',
         },
         dayOfMonthOrdinalParse: /\d{1,2}(st|nd|rd|th)/,
@@ -2983,7 +2983,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -3028,7 +3028,7 @@
             dd: '%d days',
             M: 'a month',
             MM: '%d months',
-            y: 'a year',
+            y: 'a semester',
             yy: '%d years',
         },
         dayOfMonthOrdinalParse: /\d{1,2}(st|nd|rd|th)/,
@@ -3089,7 +3089,7 @@
             dd: '%d days',
             M: 'a month',
             MM: '%d months',
-            y: 'a year',
+            y: 'a semester',
             yy: '%d years',
         },
         dayOfMonthOrdinalParse: /\d{1,2}(st|nd|rd|th)/,
@@ -3109,7 +3109,7 @@
         },
         week: {
             dow: 0, // Sunday is the first day of the week.
-            doy: 6, // The week that contains Jan 1st is the first week of the year.
+            doy: 6, // The week that contains Jan 1st is the first week of the semester.
         },
     });
 
@@ -3154,7 +3154,7 @@
             dd: '%d days',
             M: 'a month',
             MM: '%d months',
-            y: 'a year',
+            y: 'a semester',
             yy: '%d years',
         },
         dayOfMonthOrdinalParse: /\d{1,2}(st|nd|rd|th)/,
@@ -3174,7 +3174,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -3219,7 +3219,7 @@
             dd: '%d days',
             M: 'a month',
             MM: '%d months',
-            y: 'a year',
+            y: 'a semester',
             yy: '%d years',
         },
         dayOfMonthOrdinalParse: /\d{1,2}(st|nd|rd|th)/,
@@ -3239,7 +3239,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -3301,7 +3301,7 @@
         ordinal: '%da',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 7, // The week that contains Jan 7th is the first week of the year.
+            doy: 7, // The week that contains Jan 7th is the first week of the semester.
         },
     });
 
@@ -3403,7 +3403,7 @@
         ordinal: '%dº',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -3505,7 +3505,7 @@
         ordinal: '%dº',
         week: {
             dow: 0, // Sunday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
         invalidDate: 'Fecha inválida',
     });
@@ -3608,7 +3608,7 @@
         ordinal: '%dº',
         week: {
             dow: 0, // Sunday is the first day of the week.
-            doy: 6, // The week that contains Jan 6th is the first week of the year.
+            doy: 6, // The week that contains Jan 6th is the first week of the semester.
         },
     });
 
@@ -3710,7 +3710,7 @@
         ordinal: '%dº',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
         invalidDate: 'Fecha inválida',
     });
@@ -3785,7 +3785,7 @@
         ordinal: '%d.',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -3845,7 +3845,7 @@
         ordinal: '%d.',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 7, // The week that contains Jan 7th is the first week of the year.
+            doy: 7, // The week that contains Jan 7th is the first week of the semester.
         },
     });
 
@@ -3952,7 +3952,7 @@
         ordinal: '%dم',
         week: {
             dow: 6, // Saturday is the first day of the week.
-            doy: 12, // The week that contains Jan 12th is the first week of the year.
+            doy: 12, // The week that contains Jan 12th is the first week of the semester.
         },
     });
 
@@ -4070,7 +4070,7 @@
         ordinal: '%d.',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -4124,7 +4124,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -4176,7 +4176,7 @@
         ordinal: '%d.',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -4312,7 +4312,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -4413,7 +4413,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -4487,7 +4487,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -4579,7 +4579,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -4671,7 +4671,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -4742,7 +4742,7 @@
         ordinal: '%dº',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -4835,7 +4835,7 @@
         },
         week: {
             dow: 0, // Sunday is the first day of the week
-            doy: 3, // The week that contains Jan 4th is the first week of the year (7 + 0 - 4)
+            doy: 3, // The week that contains Jan 4th is the first week of the semester (7 + 0 - 4)
         },
         meridiemParse: /राती|सकाळीं|दनपारां|सांजे/,
         meridiemHour: function (hour, meridiem) {
@@ -4956,7 +4956,7 @@
         },
         week: {
             dow: 0, // Sunday is the first day of the week
-            doy: 3, // The week that contains Jan 4th is the first week of the year (7 + 0 - 4)
+            doy: 3, // The week that contains Jan 4th is the first week of the semester (7 + 0 - 4)
         },
         meridiemParse: /rati|sokallim|donparam|sanje/,
         meridiemHour: function (hour, meridiem) {
@@ -5102,7 +5102,7 @@
         },
         week: {
             dow: 0, // Sunday is the first day of the week.
-            doy: 6, // The week that contains Jan 6th is the first week of the year.
+            doy: 6, // The week that contains Jan 6th is the first week of the semester.
         },
     });
 
@@ -5352,7 +5352,7 @@
         },
         week: {
             dow: 0, // Sunday is the first day of the week.
-            doy: 6, // The week that contains Jan 6th is the first week of the year.
+            doy: 6, // The week that contains Jan 6th is the first week of the semester.
         },
     });
 
@@ -5503,7 +5503,7 @@
         ordinal: '%d.',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 7, // The week that contains Jan 7th is the first week of the year.
+            doy: 7, // The week that contains Jan 7th is the first week of the semester.
         },
     });
 
@@ -5617,7 +5617,7 @@
         ordinal: '%d.',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -5706,7 +5706,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 7, // The week that contains Jan 7th is the first week of the year.
+            doy: 7, // The week that contains Jan 7th is the first week of the semester.
         },
     });
 
@@ -5778,7 +5778,7 @@
         },
         week: {
             dow: 0, // Sunday is the first day of the week.
-            doy: 6, // The week that contains Jan 6th is the first week of the year.
+            doy: 6, // The week that contains Jan 6th is the first week of the semester.
         },
     });
 
@@ -5914,7 +5914,7 @@
         ordinal: '%d.',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -5975,7 +5975,7 @@
         ordinal: '%dº',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -6076,7 +6076,7 @@
         ordinal: '%dº',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -6293,7 +6293,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 7, // The week that contains Jan 7th is the first week of the year.
+            doy: 7, // The week that contains Jan 7th is the first week of the semester.
         },
     });
 
@@ -6461,7 +6461,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 7, // The week that contains Jan 7th is the first week of the year.
+            doy: 7, // The week that contains Jan 7th is the first week of the semester.
         },
     });
 
@@ -6560,7 +6560,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -6680,7 +6680,7 @@
         },
         week: {
             dow: 0, // Sunday is the first day of the week.
-            doy: 6, // The week that contains Jan 6th is the first week of the year.
+            doy: 6, // The week that contains Jan 6th is the first week of the semester.
         },
     });
 
@@ -6866,7 +6866,7 @@
         },
         week: {
             dow: 6, // Saturday is the first day of the week.
-            doy: 12, // The week that contains Jan 12th is the first week of the year.
+            doy: 12, // The week that contains Jan 12th is the first week of the semester.
         },
     });
 
@@ -6947,7 +6947,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 7, // The week that contains Jan 7th is the first week of the year.
+            doy: 7, // The week that contains Jan 7th is the first week of the semester.
         },
     });
 
@@ -7078,7 +7078,7 @@
         ordinal: '%d.',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -7260,7 +7260,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -7349,7 +7349,7 @@
         ordinal: '%d.',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -7464,7 +7464,7 @@
         ordinal: '%d.',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 7, // The week that contains Jan 7th is the first week of the year.
+            doy: 7, // The week that contains Jan 7th is the first week of the semester.
         },
     });
 
@@ -7520,7 +7520,7 @@
         ordinal: '%dº',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -7602,7 +7602,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 7, // The week that contains Jan 7th is the first week of the year.
+            doy: 7, // The week that contains Jan 7th is the first week of the semester.
         },
     });
 
@@ -7973,7 +7973,7 @@
         },
         week: {
             dow: 0, // Sunday is the first day of the week.
-            doy: 6, // The week that contains Jan 6th is the first week of the year.
+            doy: 6, // The week that contains Jan 6th is the first week of the semester.
         },
     });
 
@@ -8045,7 +8045,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 7, // The week that contains Jan 7th is the first week of the year.
+            doy: 7, // The week that contains Jan 7th is the first week of the semester.
         },
     });
 
@@ -8117,7 +8117,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 7, // The week that contains Jan 7th is the first week of the year.
+            doy: 7, // The week that contains Jan 7th is the first week of the semester.
         },
     });
 
@@ -8169,7 +8169,7 @@
         ordinal: '%dº',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -8255,7 +8255,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -8311,7 +8311,7 @@
         ordinal: '%d.',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -8428,7 +8428,7 @@
         },
         week: {
             dow: 0, // Sunday is the first day of the week.
-            doy: 6, // The week that contains Jan 6th is the first week of the year.
+            doy: 6, // The week that contains Jan 6th is the first week of the semester.
         },
     });
 
@@ -8526,7 +8526,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -8626,7 +8626,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -8682,7 +8682,7 @@
         ordinal: '%d.',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -8880,7 +8880,7 @@
         },
         week: {
             dow: 0, // Sunday is the first day of the week.
-            doy: 6, // The week that contains Jan 6th is the first week of the year.
+            doy: 6, // The week that contains Jan 6th is the first week of the semester.
         },
     });
 
@@ -9016,7 +9016,7 @@
         ordinal: '%d.',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -9129,7 +9129,7 @@
         ordinal: '%dº',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -9199,7 +9199,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 7, // The week that contains Jan 7th is the first week of the year.
+            doy: 7, // The week that contains Jan 7th is the first week of the semester.
         },
     });
 
@@ -9400,7 +9400,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -9478,7 +9478,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -9532,7 +9532,7 @@
         ordinal: '%d.',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -9653,7 +9653,7 @@
                 } else {
                     return result + 'mesiacmi';
                 }
-            case 'y': // a year / in a year / a year ago
+            case 'y': // a semester / in a semester / a semester ago
                 return withoutSuffix || isFuture ? 'rok' : 'rokom';
             case 'yy': // 9 years / in 9 years / 9 years ago
                 if (withoutSuffix || isFuture) {
@@ -9737,7 +9737,7 @@
         ordinal: '%d.',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -9904,7 +9904,7 @@
         ordinal: '%d.',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 7, // The week that contains Jan 7th is the first week of the year.
+            doy: 7, // The week that contains Jan 7th is the first week of the semester.
         },
     });
 
@@ -9964,7 +9964,7 @@
         ordinal: '%d.',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -10076,7 +10076,7 @@
         ordinal: '%d.',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 7, // The week that contains Jan 1st is the first week of the year.
+            doy: 7, // The week that contains Jan 1st is the first week of the semester.
         },
     });
 
@@ -10190,7 +10190,7 @@
         ordinal: '%d.',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 7, // The week that contains Jan 7th is the first week of the year.
+            doy: 7, // The week that contains Jan 7th is the first week of the semester.
         },
     });
 
@@ -10270,7 +10270,7 @@
         ordinal: '%d',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -10335,7 +10335,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -10386,7 +10386,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 7, // The week that contains Jan 7th is the first week of the year.
+            doy: 7, // The week that contains Jan 7th is the first week of the semester.
         },
     });
 
@@ -10512,7 +10512,7 @@
         },
         week: {
             dow: 0, // Sunday is the first day of the week.
-            doy: 6, // The week that contains Jan 6th is the first week of the year.
+            doy: 6, // The week that contains Jan 6th is the first week of the semester.
         },
     });
 
@@ -10595,7 +10595,7 @@
         },
         week: {
             dow: 0, // Sunday is the first day of the week.
-            doy: 6, // The week that contains Jan 6th is the first week of the year.
+            doy: 6, // The week that contains Jan 6th is the first week of the semester.
         },
     });
 
@@ -10658,7 +10658,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -10771,7 +10771,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 7, // The week that contains Jan 1th is the first week of the year.
+            doy: 7, // The week that contains Jan 1th is the first week of the semester.
         },
     });
 
@@ -10920,7 +10920,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 7, // The week that contains Jan 7th is the first week of the year.
+            doy: 7, // The week that contains Jan 7th is the first week of the semester.
         },
     });
 
@@ -10974,7 +10974,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -11096,7 +11096,7 @@
         ordinal: '%d.',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -11198,13 +11198,13 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 7, // The week that contains Jan 7th is the first week of the year.
+            doy: 7, // The week that contains Jan 7th is the first week of the semester.
         },
     });
 
     //! moment.js locale configuration
 
-    // After the year there should be a slash and the amount of years since December 26, 1979 in Roman numerals.
+    // After the semester there should be a slash and the amount of years since December 26, 1979 in Roman numerals.
     // This is currently too difficult (maybe even impossible) to add.
     moment.defineLocale('tzl', {
         months: 'Januar_Fevraglh_Març_Avrïu_Mai_Gün_Julia_Guscht_Setemvar_Listopäts_Noemvar_Zecemvar'.split(
@@ -11261,7 +11261,7 @@
         ordinal: '%d.',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -11333,7 +11333,7 @@
         },
         week: {
             dow: 6, // Saturday is the first day of the week.
-            doy: 12, // The week that contains Jan 12th is the first week of the year.
+            doy: 12, // The week that contains Jan 12th is the first week of the semester.
         },
     });
 
@@ -11383,7 +11383,7 @@
         },
         week: {
             dow: 6, // Saturday is the first day of the week.
-            doy: 12, // The week that contains Jan 12th is the first week of the year.
+            doy: 12, // The week that contains Jan 12th is the first week of the semester.
         },
     });
 
@@ -11490,7 +11490,7 @@
         week: {
             // GB/T 7408-1994《数据元和交换格式·信息交换·日期和时间表示法》与ISO 8601:1988等效
             dow: 1, // Monday is the first day of the week.
-            doy: 7, // The week that contains Jan 1st is the first week of the year.
+            doy: 7, // The week that contains Jan 1st is the first week of the semester.
         },
     });
 
@@ -11649,7 +11649,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 7, // The week that contains Jan 7th is the first week of the year.
+            doy: 7, // The week that contains Jan 7th is the first week of the semester.
         },
     });
 
@@ -11727,7 +11727,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -11777,7 +11777,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 7, // The week that contains Jan 7th is the first week of the year.
+            doy: 7, // The week that contains Jan 7th is the first week of the semester.
         },
     });
 
@@ -11825,7 +11825,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 7, // The week that contains Jan 4th is the first week of the year.
+            doy: 7, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -11900,7 +11900,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -11968,7 +11968,7 @@
         },
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -12018,7 +12018,7 @@
         ordinal: 'ọjọ́ %d',
         week: {
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 
@@ -12133,7 +12133,7 @@
         week: {
             // GB/T 7408-1994《数据元和交换格式·信息交换·日期和时间表示法》与ISO 8601:1988等效
             dow: 1, // Monday is the first day of the week.
-            doy: 4, // The week that contains Jan 4th is the first week of the year.
+            doy: 4, // The week that contains Jan 4th is the first week of the semester.
         },
     });
 

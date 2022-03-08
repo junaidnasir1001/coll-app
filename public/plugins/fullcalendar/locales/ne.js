@@ -5,7 +5,7 @@ FullCalendar.globalLocales.push(function () {
     code: 'ne', // code for nepal
     week: {
       dow: 7, // Sunday is the first day of the week.
-      doy: 1, // The week that contains Jan 1st is the first week of the year.
+      doy: 1, // The week that contains Jan 1st is the first week of the semester.
     },
     buttonText: {
       prev: 'अघिल्लो',

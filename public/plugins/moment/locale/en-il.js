@@ -50,7 +50,7 @@
             dd: '%d days',
             M: 'a month',
             MM: '%d months',
-            y: 'a year',
+            y: 'a semester',
             yy: '%d years',
         },
         dayOfMonthOrdinalParse: /\d{1,2}(st|nd|rd|th)/,

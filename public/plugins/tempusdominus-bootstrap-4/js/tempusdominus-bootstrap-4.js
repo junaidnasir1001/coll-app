@@ -2462,14 +2462,14 @@ var TempusDominusBootstrap4 = function ($) {
         yearsViewHeader.eq(2).addClass('disabled');
       }
 
-      html += "<span data-action=\"selectYear\" class=\"year old" + (!this._isValid(startYear, 'y') ? ' disabled' : '') + "\">" + (startYear.year() - 1) + "</span>";
+      html += "<span data-action=\"selectYear\" class=\"semester old" + (!this._isValid(startYear, 'y') ? ' disabled' : '') + "\">" + (startYear.year() - 1) + "</span>";
 
       while (!startYear.isAfter(endYear, 'y')) {
-        html += "<span data-action=\"selectYear\" class=\"year" + (startYear.isSame(this._getLastPickedDate(), 'y') && !this.unset ? ' active' : '') + (!this._isValid(startYear, 'y') ? ' disabled' : '') + "\">" + startYear.year() + "</span>";
+        html += "<span data-action=\"selectYear\" class=\"semester" + (startYear.isSame(this._getLastPickedDate(), 'y') && !this.unset ? ' active' : '') + (!this._isValid(startYear, 'y') ? ' disabled' : '') + "\">" + startYear.year() + "</span>";
         startYear.add(1, 'y');
       }
 
-      html += "<span data-action=\"selectYear\" class=\"year old" + (!this._isValid(startYear, 'y') ? ' disabled' : '') + "\">" + startYear.year() + "</span>";
+      html += "<span data-action=\"selectYear\" class=\"semester old" + (!this._isValid(startYear, 'y') ? ' disabled' : '') + "\">" + startYear.year() + "</span>";
       yearsView.find('td').html(html);
     };
 
