@@ -17,6 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::resource('teacher', \App\Http\Controllers\TeacherController::class);
 Route::get('/teacher-list', [\App\Http\Controllers\TeacherController::class, 'showData'])->name('teacher.list');
 
+// student Routes
+Route::resource('student', \App\Http\Controllers\StudentController::class);
+Route::get('/student-list', [\App\Http\Controllers\StudentController::class, 'showData'])->name('student.list');
 
 // Session Academic Routes
 Route::resource('session-academic', \App\Http\Controllers\SessionAcademicController::class);

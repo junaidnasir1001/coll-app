@@ -42,11 +42,11 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="">Admission Form no:</label>
-                                        <input type="text" class="form-control" id="" placeholder="Enter Name" name="name">
+                                        <input type="text" class="form-control" id="" placeholder="Enter Name" name="admission_form_no">
                                     </div>
                                     <div class="form-group">
                                         <label>Admission Level:</label>
-                                        <select class="form-control select2" name="designation" style="width: 100%;">
+                                        <select class="form-control select2" name="admission_level" style="width: 100%;">
                                             <option selected="selected">Select Level</option>
                                             <option>Intermediate</option>
                                             <option>Bachelor</option>
@@ -55,7 +55,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Admission In:</label>
-                                        <select class="form-control select2" name="designation" style="width: 100%;">
+                                        <select class="form-control select2" name="admitted_in" style="width: 100%;">
                                             <option selected="selected">Select Level</option>
                                             <option>Pre Eng</option>
                                             <option>ICS</option>
@@ -66,7 +66,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Admission On:</label>
-                                        <select class="form-control select2" name="designation" style="width: 100%;">
+                                        <select class="form-control select2" name="admission_on" style="width: 100%;">
                                             <option selected="selected">Select Level</option>
                                             <option>Open Merit</option>
                                             <option>Quota</option>
@@ -75,7 +75,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Quota Type:</label>
-                                        <select class="form-control select2" name="designation" style="width: 100%;">
+                                        <select class="form-control select2" name="quota_type" style="width: 100%;">
                                             <option selected="selected">Select Level</option>
                                             <option>Teacher Quota</option>
                                             <option>Disable Quota</option>
@@ -84,67 +84,67 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="">College Roll#:</label>
-                                        <input type="date" class="form-control" id="" placeholder="Enter Date of Birth" name="dob">
+                                        <input type="date" class="form-control" id="" placeholder="Enter Date of Birth" name="college_roll_no">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Registration #:</label>
-                                        <input type="number" class="form-control" id="" placeholder="Enter CNIC" name="cnic">
+                                        <input type="number" class="form-control" id="" placeholder="Enter CNIC" name="registration_no">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Roll # 1:</label>
-                                        <input type="text" class="form-control" id="" placeholder="Enter Address" name="address">
+                                        <input type="text" class="form-control" id="" placeholder="Enter Address" name="roll_no_one">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Inter Roll No:</label>
                                         <input type="text" class="form-control" id=""
-                                               placeholder="Enter Last Qualification" name="last_qualification">
+                                               placeholder="Enter Last Qualification" name="roll_no_two">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Inter Registration No:</label>
                                         <input type="text" class="form-control" id=""
-                                               placeholder="Enter Last Qualification" name="last_qualification">
+                                               placeholder="Enter Last Qualification" name="inter_registration_no">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Inter Board Name:</label>
                                         <input type="text" class="form-control" id=""
-                                               placeholder="Enter Last Qualification" name="last_qualification">
+                                               placeholder="Enter Last Qualification" name="inter_board_name">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Inter Passing Year:</label>
                                         <input type="text" class="form-control" id=""
-                                               placeholder="Enter Last Qualification" name="last_qualification">
+                                               placeholder="Enter Last Qualification" name="inter_passing_year">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Inter Pass Type:</label>
                                         <input type="text" class="form-control" id=""
-                                               placeholder="Enter Last Qualification" name="last_qualification">
+                                               placeholder="Enter Last Qualification" name="inter_pass_type">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Inter Total Marks:</label>
                                         <input type="text" class="form-control" id=""
-                                               placeholder="Enter Last Qualification" name="last_qualification">
+                                               placeholder="Enter Last Qualification" name="inter_total_marks">
                                     </div>
 
                                     <div class="form-group">
                                         <label for="">Inter Obtained Marks:</label>
                                         <input type="text" class="form-control" id=""
-                                               placeholder="Enter Last Qualification" name="last_qualification">
+                                               placeholder="Enter Last Qualification" name="inter_obtained_marks">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Inter Grade:</label>
                                         <input type="text" class="form-control" id=""
-                                               placeholder="Enter Last Qualification" name="last_qualification">
+                                               placeholder="Enter Last Qualification" name="inter_grade">
                                     </div>
                                     ]
                                     <div class="form-group">
                                         <label for="">Inter Institution Name:</label>
                                         <input type="text" class="form-control" id=""
-                                               placeholder="Enter Last Qualification" name="last_qualification">
+                                               placeholder="Enter Last Qualification" name="inter_institute_name">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Inter Subject Combination:</label>
                                         <input type="text" class="form-control" id=""
-                                               placeholder="Enter Last Qualification" name="last_qualification">
+                                               placeholder="Enter Last Qualification" name="inter_subject_combination">
                                     </div>
 
 
@@ -152,169 +152,163 @@
                                 <!-- /.col -->
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="">Roll # 2:</label>
-                                        <input type="number" class="form-control" id=""
-                                               placeholder="Enter Mobile1 Number" name="first_mobile">
-                                    </div>
-
-                                    <div class="form-group">
                                         <label for="">Academic Session:</label>
                                         <input type="number" class="form-control" id=""
-                                               placeholder="Enter Mobile2 Number" name="second_mobile">
+                                               placeholder="Enter Mobile2 Number" name="academic_session">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Semester/Current:</label>
-                                        <input type="text" class="form-control" id="" placeholder="Enter Gender" name="gender">
+                                        <input type="text" class="form-control" id="" placeholder="Enter Gender" name="current_semester_year">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Name:</label>
-                                        <input type="text" class="form-control" id="" placeholder="Enter Email" name="email">
+                                        <input type="text" class="form-control" id="" placeholder="Enter" name="name">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Father Name:</label>
-                                        <input type="text" class="form-control" id="" placeholder="Enter Email" name="email">
+                                        <input type="text" class="form-control" id="" placeholder="Enter " name="father_name">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Father Cnic:</label>
-                                        <input type="text" class="form-control" id="" placeholder="Enter Email" name="email">
+                                        <input type="text" class="form-control" id="" placeholder="Enter " name="father_cnic">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Guardian Name:</label>
-                                        <input type="text" class="form-control" id="" placeholder="Enter Email" name="email">
+                                        <input type="text" class="form-control" id="" placeholder="Enter " name="guardian_name">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Guardian CNic:</label>
-                                        <input type="email" class="form-control" id="" placeholder="Enter Email" name="email">
+                                        <input type="text" class="form-control" id="" placeholder="Enter " name="guardian_cnic">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Guardian Relation:</label>
-                                        <input type="email" class="form-control" id="" placeholder="Enter Email" name="email">
+                                        <input type="text" class="form-control" id="" placeholder="Enter " name="guardian_relation">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Student No:</label>
                                         <input type="text" class="form-control" id=""
-                                               placeholder="Enter Last Qualification" name="last_qualification">
+                                               placeholder="Enter Last Qualification" name="student_phone_no">
                                     </div>
-                                    
+
                                     <div class="form-group">
                                         <label for="">Date of Cnic Issue:</label>
-                                        <input type="date" class="form-control" id="" name="file_path">
+                                        <input type="date" class="form-control" id="" name="date_of_cnic_issue">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Home No:</label>
                                         <input type="text" class="form-control" id=""
-                                               placeholder="Enter Last Qualification" name="last_qualification">
+                                               placeholder="Enter Last Qualification" name="home_phone_no">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Gender:</label>
                                         <input type="text" class="form-control" id=""
-                                               placeholder="Enter Last Qualification" name="last_qualification">
+                                               placeholder="Enter Last Qualification" name="gender">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Hafiz:</label>
                                         <input type="text" class="form-control" id=""
-                                               placeholder="Enter Last Qualification" name="last_qualification">
+                                               placeholder="Enter Last Qualification" name="hafiz">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Domicile District:</label>
                                         <input type="text" class="form-control" id=""
-                                               placeholder="Enter Last Qualification" name="last_qualification">
+                                               placeholder="Enter Last Qualification" name="domicile_district">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Residential City:</label>
                                         <input type="text" class="form-control" id=""
-                                               placeholder="Enter Last Qualification" name="last_qualification">
+                                               placeholder="Enter Last Qualification" name="residential_city">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Province:</label>
                                         <input type="text" class="form-control" id=""
-                                               placeholder="Enter Last Qualification" name="last_qualification">
+                                               placeholder="Enter Last Qualification" name="province">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Nationality:</label>
                                         <input type="text" class="form-control" id=""
-                                               placeholder="Enter Last Qualification" name="last_qualification">
+                                               placeholder="Enter Last Qualification" name="nationality">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Email:</label>
                                         <input type="email" class="form-control" id=""
-                                               placeholder="Enter Last Qualification" name="last_qualification">
+                                               placeholder="Enter Last Qualification" name="email">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Disability (if any):</label>
                                         <input type="text" class="form-control" id=""
-                                               placeholder="Enter Last Qualification" name="last_qualification">
+                                               placeholder="Enter Last Qualification" name="disability">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Disability Type:</label>
                                         <input type="text" class="form-control" id=""
-                                               placeholder="Enter Last Qualification" name="last_qualification">
+                                               placeholder="Enter Last Qualification" name="disability_type">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Postal Address:</label>
                                         <input type="text" class="form-control" id=""
-                                               placeholder="Enter Last Qualification" name="last_qualification">
+                                               placeholder="Enter Last Qualification" name="postal_address">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Permanent Address:</label>
                                         <input type="text" class="form-control" id=""
-                                               placeholder="Enter Last Qualification" name="last_qualification">
+                                               placeholder="Enter Last Qualification" name="permanent_address">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Matric Roll No:</label>
                                         <input type="text" class="form-control" id=""
-                                               placeholder="Enter Last Qualification" name="last_qualification">
+                                               placeholder="Enter Last Qualification" name="matric_roll_no">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Matric Registration No:</label>
                                         <input type="text" class="form-control" id=""
-                                               placeholder="Enter Last Qualification" name="last_qualification">
+                                               placeholder="Enter Last Qualification" name="matric_registration_no">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Matric Board Name:</label>
                                         <input type="text" class="form-control" id=""
-                                               placeholder="Enter Last Qualification" name="last_qualification">
+                                               placeholder="Enter Last Qualification" name="matric_board_name">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Matric Passing Year:</label>
                                         <input type="text" class="form-control" id=""
-                                               placeholder="Enter Last Qualification" name="last_qualification">
+                                               placeholder="Enter Last Qualification" name="matric_passing_year">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Matric Pass Type:</label>
                                         <input type="text" class="form-control" id=""
-                                               placeholder="Enter Last Qualification" name="last_qualification">
+                                               placeholder="Enter Last Qualification" name="matric_pass_type">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Matric Total Marks:</label>
                                         <input type="text" class="form-control" id=""
-                                               placeholder="Enter Last Qualification" name="last_qualification">
+                                               placeholder="Enter Last Qualification" name="matric_total_marks">
                                     </div>
 
                                     <div class="form-group">
                                         <label for="">Matric Obtained Marks:</label>
                                         <input type="text" class="form-control" id=""
-                                               placeholder="Enter Last Qualification" name="last_qualification">
+                                               placeholder="Enter Last Qualification" name="matric_obtained_marks">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Matric Grade:</label>
                                         <input type="text" class="form-control" id=""
-                                               placeholder="Enter Last Qualification" name="last_qualification">
+                                               placeholder="Enter Last Qualification" name="matric_grade">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Board Noc:</label>
                                         <input type="text" class="form-control" id=""
-                                               placeholder="Enter Last Qualification" name="last_qualification">
+                                               placeholder="Enter Last Qualification" name="matric_board_noc">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Matric Institution Name:</label>
                                         <input type="text" class="form-control" id=""
-                                               placeholder="Enter Last Qualification" name="last_qualification">
+                                               placeholder="Enter Last Qualification" name="matric_institute_name">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Matric Subject Combination:</label>
                                         <input type="text" class="form-control" id=""
-                                               placeholder="Enter Last Qualification" name="last_qualification">
+                                               placeholder="Enter Last Qualification" name="matric_subject_combination">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Marital Status:</label>
@@ -363,7 +357,7 @@
                 if (!$('#form').valid()) {
                     return false;
                 }
-                let route = "{{route('teacher.store')}}";
+                let route = "{{route('student.store')}}";
                 console.log(route)
                 $.ajax({
                     type: 'POST',
