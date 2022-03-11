@@ -35,6 +35,10 @@ Route::get('/add-status', function () {
     return view('admin.status.create');
 });
 
+Route::get('/add-student', function () {
+    return view('admin.student.create');
+});
+
 // Subject Routes
 Route::resource('subject', \App\Http\Controllers\SubjectController::class);
 Route::get('/subject-list', [\App\Http\Controllers\SubjectController::class, 'showData'])->name('subject.list');
