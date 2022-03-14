@@ -1,10 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Imports\StudentImport;
 use App\Models\Student;
 use Illuminate\Http\Request;
+use Maatwebsite\Excel\Facades\Excel;
 use DataTables;
+
 class StudentController extends Controller
 {
     /**
@@ -174,4 +176,5 @@ class StudentController extends Controller
         Excel::import(new StudentImport,$request->file('student_file'));
         return back();
     }
+
 }

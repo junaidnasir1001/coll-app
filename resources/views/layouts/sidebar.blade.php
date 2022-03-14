@@ -70,7 +70,7 @@
                     <a href="#" class="nav-link ">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
-                            Program Level
+                            Student
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
@@ -78,13 +78,13 @@
                         <li class="nav-item">
                             <a href="{{url('student/create')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Add Program Level</p>
+                                <p>Add Student</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="{{url('student/show')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>View Program Level</p>
+                                <p>View Student</p>
                             </a>
                         </li>
 

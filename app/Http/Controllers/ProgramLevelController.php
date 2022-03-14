@@ -103,11 +103,23 @@ ProgramLevelController extends Controller
      * Remove the specified resource from storage.
      *
      * @param  \App\Models\ProgramLevel  $programLevel
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function destroy(ProgramLevel $programLevel)
     {
-        //
+        try {
+            if ($programLevel->delete()) {
+                $response = array('status' => 'success', 'message' => 'Data Deleted Successful');
+                return response()->json($response, 200);
+            }
+
+            $response = array('status' => 'error', 'message' => 'Data Not Deleted Successful');
+            return response()->json($response, 403);
+
+        } catch (\Exception  $th) {
+            $response = array('status' => 'error', 'message' => $th->getMessage());
+            return response()->json($response, 403);
+        }
     }
 
     public function showData(Request $request)
@@ -118,7 +130,7 @@ ProgramLevelController extends Controller
                 ->addIndexColumn()
                 ->addColumn('action', function($row){
                     $actionBtn = '<a href="'. $row->id .'/edit" class="btn btn-xs btn-primary"><i class="glyphicon glyphicon-edit"></i> Edit</a>
-                                 <form action="{{ route(\'destroy\',' . $row->id . ') }}" method="POST" class="delete_form">
+                                 <form action="'.$row->id.'" method="POST" class="delete_form">
                     '.csrf_field().'
                     '.method_field("DELETE").'
                     <button type="submit" class="btn btn-xs btn-danger"

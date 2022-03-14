@@ -20,6 +20,7 @@ Route::get('/teacher-list', [\App\Http\Controllers\TeacherController::class, 'sh
 // student Routes
 Route::resource('student', \App\Http\Controllers\StudentController::class);
 Route::get('/student-list', [\App\Http\Controllers\StudentController::class, 'showData'])->name('student.list');
+Route::post('/import', [\App\Http\Controllers\StudentController::class,'import']);
 
 // Session Academic Routes
 Route::resource('session-academic', \App\Http\Controllers\SessionAcademicController::class);
